@@ -30,12 +30,31 @@
     border-radius: 5px;
 }
 
+.div-home {
+    display: flex;
+    flex-flow: row wrap;
+}
 
 
-.div-photo {
-    margin-top: 0px;
-    margin-left: 0px; 
-   
+.div-colum {
+    display: flex;
+    width: 50%;
+    height: 100%;
+}
+
+.div-colum-rigth {
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #23232e; 
+}
+
+.h1-colum-rigth {
+    cursor: pointer;
+    margin-top: 40%;
+    color: white;
+    font-size: 80px;
 }
 
 .h1-info {
@@ -55,10 +74,6 @@
     margin-top: 20px;
     letter-spacing: 1.4px;
     line-height: 30px;
-}
-
-.div-home {
-    display: flex;
 }
 
 .div-about {
@@ -106,34 +121,28 @@ body {
 
 
 
-@media (max-width: 3000px){
-    body {
-        overflow-x: hidden;
+@media (max-width: 1220px){
+
+    .div-colum-rigth {
+        display: none;
     }
 
-    .nav-list {
-        position: absolute;
-        top: 8vh;
-        right: 0;
-        width: 50vw;
-        height: 92vh;
-        background: #23232e;
-        flex-direction: column;
+    .div-colum {
+        width: 100%;
+        height: 100%;
+    }
+  
+}
+
+@media (max-width: 615px){
+    .info {
+        text-align: center;
         align-items: center;
-        justify-content: space-around;
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in;
     }
 
-    .nav-list li {
-        margin-left: 0;
-        opacity: 0;
+    .btn-curriculo {
+        margin-left: 0px;
     }
-
-    .mobile-menu {
-        display: block;
-    }
-
 }
 
 .nav-list.active {
