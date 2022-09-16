@@ -4,6 +4,10 @@
     font-family: Helvetica, Arial, sans-serif;
 }
 
+.body2 {
+    filter: blur(10px);
+}
+
 
 .info {
     color: rgb(48, 48, 48);

@@ -9,16 +9,24 @@
 </head>
 <link rel="stylesheet" href="css/style.css">
 
-<body>
+<body id="body">
 
-    <script src="mobile-navbar.js"></script>
+    <script>
+    
+    function myFunction(){
+        document.getElementById("body").classList.toggle("body2")
+        
+    }
+    
+    </script>
+    
 
     <div class="wrap">
         <div class="div-home">
             <div class="div-colum">
                 <div class="div-colum-rigth">
                     <img src="" alt="">
-                    <a href="" style="text-decoration: none;"><h1 class="h1-colum-rigth">Not tap here!</h1></a>
+                    <a href="" style="text-decoration: none;"><h1 class="h1-colum-rigth" id="butt" onclick="myFunction()">Not tap here!</h1></a>
                 </div>
             </div>
             <div class="div-colum">
